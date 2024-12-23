@@ -1,0 +1,101 @@
+.box{
+    position: relative;
+    top: 15%;
+    width: 35rem;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 10px 8px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.rightHead{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+    margin: 0 auto;
+}
+#Righticon{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 30%;
+}
+.Name{
+    position: absolute;
+    font-size: 2rem;
+    left: 38%;
+}
+.message{
+    margin-top: 4rem;
+}
+.buttons{
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+
+}
+/* .logiWithData{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+.btnContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.loginButtonContents{
+    display: flex;
+    justify-content: space-between;
+}
+.btnImage{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 20%;
+}
+.btns{
+    margin-top: 1rem;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    padding: 1rem;
+    border-radius: 1rem 1rem;
+}
+.btnMsg{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 15%;
+}
+.optionButtons{
+    margin-left: 1.5rem;
+    width: 15rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+#SAAS:focus{
+    color: #fff;
+    background-color: blue;
+}
+#Self_Hosted:focus{
+    color: #fff;
+    background-color: blue;
+}
+.btns:hover{
+    background-color: aquamarine;
+}
+@media only screen and (max-width: 960px) {
+    .box{
+        position: relative;
+        margin-left: -3rem;
+        top: 15%;
+        width: fit-content;
+        height: fit-content;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        box-shadow: 10px 8px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+}
