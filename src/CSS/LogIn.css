@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .leftContainer{
     width: 50%;
@@ -23,6 +23,10 @@
     }
     .leftContainer{
         display: none;
+    }
+    .rightContainer{
+        width: 90%;
+       margin-top: 3rem;
     }
     
 }

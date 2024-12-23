@@ -89,7 +89,6 @@
 @media only screen and (max-width: 960px) {
     .box{
         position: relative;
-        margin-left: -3rem;
         top: 15%;
         width: fit-content;
         height: fit-content;
