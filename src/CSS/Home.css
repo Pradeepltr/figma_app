@@ -1,0 +1,17 @@
+.Parent{
+    display: flex;
+    justify-content: space-around;
+}
+.leftChild{
+    position: fixed;
+    left:1%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 20%;
+}
+.rightChild{
+    margin-left: 20rem;
+    margin-top: 3rem;
+    width: 70%;
+    margin-bottom: 3rem;
+}

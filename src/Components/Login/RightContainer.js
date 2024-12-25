@@ -6,7 +6,14 @@ import gitlab from '../../Image/gitlab.png'
 import azure from '../../Image/azur.png'
 import bitbucket from '../../Image/bitbucket.webp'
 import keyIcon from '../../Image/key-icon.jpg'
+import { useNavigate } from "react-router-dom";
 function RightContainer(){
+
+    const navigate = useNavigate();
+
+  function handleButtonClick(){
+    navigate("/home"); 
+  };
     const SAAS_Data=[
         {
             'imgSrc':github,
@@ -66,7 +73,7 @@ function RightContainer(){
             {buttonData.map(function(item){
                 return(
                     <div className='btnContent'>
-                    <button type='submit' className='btns'>
+                    <button type='submit' className='btns' onClick={handleButtonClick}>
                         <div className='loginButtonContents'>
                         <span className='btnImageData'>
                         <img src={item.imgSrc} className='btnImage'/>

@@ -1,0 +1,63 @@
+#titleicon{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+}
+.titleName{
+    margin-left: 3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.userBox{
+    position: absolute;
+   margin-top: 1rem;
+   margin-left: 0.5rem;
+}
+#pk{
+   width: 15rem;
+   height: 2.5rem;
+   font-size: 1rem;
+   border-radius: 0.5rem;
+   box-shadow: 10px 8px 8px 15px rgba(0, 0, 0, 0.1);
+   padding-left: 0.5rem;
+   font-weight: bold;
+}
+#btnIcons{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: inherit;
+}
+.TopButtons{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.homeLeftbuttons{
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    width: 15rem;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+.Title{
+    margin-left: 1rem;
+}
+.downButton{
+    margin-top: 80%;
+    vertical-align: bottom;
+    margin-bottom: 3rem;
+}
+#Repo{
+    background-color: blue;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    color: #fff;
+}
+.homeLeftbuttons:hover{
+    cursor: pointer;
+}
