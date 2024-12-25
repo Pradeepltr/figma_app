@@ -170,6 +170,7 @@ display: flex;
     .rightHomeContainer{
         width: 28.2rem;
         margin-left: -19rem;
+        margin-right: 3rem;
     }
     .rightSection{
         text-align: left;
