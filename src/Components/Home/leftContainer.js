@@ -10,7 +10,7 @@ import SettingIcon from '../../Image/SettingIcon.png'
 import CloudIcon from '../../Image/CloudIcon.png'
 import { useNavigate } from "react-router-dom";
 function LeftContainer(){
-    const navigate=useNavigate()
+const navigate=useNavigate()
 function setRouter(){
     navigate("/")
 }

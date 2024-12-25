@@ -155,6 +155,12 @@ display: flex;
   .change .b3 {
     transform: translate(0, -11px) rotate(45deg);
   }
+  .notClicked{
+    display: none;
+}
+.FixedContent{
+    display: none;
+}
   @media only screen and (max-width: 877px) {
    
     .MobileView{
@@ -168,9 +174,12 @@ display: flex;
         justify-content: left;
     }
     .rightHomeContainer{
-        width: 28.2rem;
-        margin-left: -19rem;
-        margin-right: 3rem;
+        border: none;
+        margin: auto;
+        padding: auto;
+        width: 29.5rem;
+        /* margin-left: -19rem;
+        margin-right: 3rem;  */
     }
     .rightSection{
         text-align: left;
@@ -178,5 +187,62 @@ display: flex;
     }
     #AddRepo{
         margin-left: 1rem;
+    }
+    .MobileView{
+        margin-top: -1rem;
+    }
+    .notClicked{
+        display: none;
+    }
+    .Clicked{
+        padding: 2rem 2rem;
+        background-color: #fff;
+        margin-top: -6rem;
+        width: 50rem;
+        display: block;
+        width: 80rem;
+        position: fixed;
+        box-shadow: 10px 8px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    .buttonClickedHeading{
+        display: flex;
+    }
+    .icon_Name{
+        display: flex;
+    }
+    #BIcon{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+    }
+    .bName{
+        margin-left: 3rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .userNameBox{
+        position: absolute;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+    }
+    #pk1{
+        
+            width: 15rem;
+            height: 2.5rem;
+            font-size: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 10px 8px 8px 15px rgba(0, 0, 0, 0.1);
+            padding-left: 0.5rem;
+            font-weight: bold;
+         
+    }
+    .CrossButton{
+        margin-left: 16rem;
+    }
+    .items{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     }
 }

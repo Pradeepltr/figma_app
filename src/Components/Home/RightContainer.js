@@ -5,6 +5,13 @@ import plusIcon from '../../Image/plusIcon.png'
 import sizeIcon from '../../Image/databeIcon.png'
 import React, {useState} from 'react'
 import imgSrc from '../../Image/codeant_ai_logo.jpeg'
+import HomeIcon from '../../Image/HomeIcon.jpg'
+import HowToUseIcon from '../../Image/HowTouse.jpg'
+import CodeIcon from '../../Image/CodeIcon.jpg'
+import logOut from '../../Image/logOutIcon.jpg'
+import PhoneIcon from '../../Image/phoneIcon.jpg'
+import SettingIcon from '../../Image/SettingIcon.png'
+import CloudIcon from '../../Image/CloudIcon.png'
 function RightContainerHome(){
     const RepoData=[
         {
@@ -73,6 +80,8 @@ function RightContainerHome(){
     ]
     const [data,setdata]=useState(RepoData)
     const [inpuText,setinputText]=useState('')
+    const [isButtonClick,setisButtonClick]=useState('notClicked')
+    const [isFixed,setisFixed]=('notFixedContent')
     function handleInput(e){
      setinputText(e.target.value)
     }
@@ -90,16 +99,94 @@ function RightContainerHome(){
         setinputText('')
         setdata(RepoData)
     }
+    const topContent=[
+        {
+            'Name':'Repositories',
+            'img':HomeIcon
+        },
+        {
+            'Name':'AI Code Review',
+            'img':CodeIcon
+        },
+        {
+            'Name':'Cloud Security',
+            'img':CloudIcon
+        },
+        {
+            'Name':'How to use',
+            'img':HowToUseIcon
+        },
+        {
+            'Name':'Settings',
+            'img':SettingIcon
+        },
+        {
+            'Name':'Suport',
+            'img':PhoneIcon
+        },
+    ]
+    function checkButtonClickedFalse(){
+        setisButtonClick('notClicked')
+    }
+    function checkButtonClickedTrue(){
+        setisFixed('FixedContent')
+        setisButtonClick('Clicked')
+    }
+
     return(
         <div className='rightHomeContainer'>
-        <div className='MobileView'>
+            <div className={isButtonClick}>
+            <div className='buttonClickedContent'>
+        <div className='buttonClickedHeading'>
+            <div className='icon_Name'>
+                <div className='bIcon'>
+                    <img src={imgSrc} id='BIcon' />
+                </div>
+                <div className='bName'>CodeAnt AI</div>
+            </div>
+            <div className='CrossButton' onClick={checkButtonClickedFalse}><h2>X</h2></div>
+        </div>
+        <div className='userNameBox'>
+        <select name='Pradeep Kumar' id='pk1'>
+            <option value='pk'>Pradeep Kumar</option>
+            <option value='abc'>Abc</option>
+            <option value='abc'>Xyz</option>
+        </select>
+        </div>
+        <div className='items'>
+        {
+                topContent.map(function(item){
+                    return(
+                        <>
+                        <button type='submit'  className='homeLeftbuttons'>
+                     <span className='buttonIcon'>
+                        <img src={item.img}  id='btnIcons'/>
+                     </span>
+                     <span className='Title'>{item.Name}</span>
+                    </button>
+                        </>
+                    )
+                })
+            }
+            <button type='submit'  className='homeLeftbuttons'>
+                     <span className='buttonIcon'>
+                        <img src={logOut}  id='btnIcons'/>
+                     </span>
+                     <span className='Title'>Logout</span>
+                    </button>
+            </div>
+        </div>
+       
+        </div>
+        <div className={isFixed}>
+            <div className='MobileView'>
         <div className='rightHeadMobile'>
         <div className='icon'>
         <img src={imgSrc} alt='' id='RighticonMobileView'/>
         </div>
         <div className='NameMobileview'>CodeAnt AI</div>
         </div>
-        <div className='ThreeLineButton'>
+        <div className='ThreeLineButton' onClick={checkButtonClickedTrue}>
             <div className='b1'></div>
             <div className='b2'></div>
             <div className='b3'></div>
@@ -124,6 +211,7 @@ function RightContainerHome(){
                     Add Repositories
                 </button>
             </div>
+        </div>
         </div>
         <div className='RepoList'>
            {data.map(function(item){
