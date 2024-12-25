@@ -4,6 +4,7 @@ import refreshIcon from '../../Image/refresh-icon-1024x1024-320jsasx.png'
 import plusIcon from '../../Image/plusIcon.png'
 import sizeIcon from '../../Image/databeIcon.png'
 import React, {useState} from 'react'
+import imgSrc from '../../Image/codeant_ai_logo.jpeg'
 function RightContainerHome(){
     const RepoData=[
         {
@@ -91,6 +92,19 @@ function RightContainerHome(){
     }
     return(
         <div className='rightHomeContainer'>
+        <div className='MobileView'>
+        <div className='rightHeadMobile'>
+        <div className='icon'>
+        <img src={imgSrc} alt='' id='RighticonMobileView'/>
+        </div>
+        <div className='NameMobileview'>CodeAnt AI</div>
+        </div>
+        <div className='ThreeLineButton'>
+            <div className='b1'></div>
+            <div className='b2'></div>
+            <div className='b3'></div>
+        </div>
+        </div>
         <div className='rightHeading'>
             <div className='leftSection'>
                 <span className='titleNameRight'>Repositories</span><br />

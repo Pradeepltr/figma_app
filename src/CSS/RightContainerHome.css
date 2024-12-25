@@ -17,6 +17,7 @@
     font-weight: bold;
 }
 .serachField{
+    width: fit-content;
     margin-bottom: 1rem;
     margin-top: 1rem;
     display: flex;
@@ -51,6 +52,8 @@
     padding:0.4rem 0.2rem;
 }
 #AddRepo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-radius: 0.5rem;
     margin-left: 2rem;
     font-size: 1rem;
@@ -115,4 +118,64 @@ display: flex;
     margin-right: 0.5rem;
     height: 0.8rem;
     width: 0.8rem;
+}
+.rightHeadMobile{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+.NameMobileview{
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+#RighticonMobileView{
+    height: 3rem;
+    width: 3rem;
+}
+.MobileView{
+    display: none;
+}
+.ThreeLineButton {
+    margin-left:45%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .b1, .b2, .b3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change .b1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .b2 {opacity: 0;}
+  
+  .change .b3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  @media only screen and (max-width: 877px) {
+   
+    .MobileView{
+        display: flex;
+    }
+    .rightHeading{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid gray;
+        text-align: left;
+        justify-content: left;
+    }
+    .rightHomeContainer{
+        width: 28.2rem;
+        margin-left: -19rem;
+    }
+    .rightSection{
+        text-align: left;
+
+    }
+    #AddRepo{
+        margin-left: 1rem;
+    }
 }
