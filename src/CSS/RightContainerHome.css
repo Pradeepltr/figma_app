@@ -161,6 +161,9 @@ display: flex;
 .FixedContent{
     display: none;
 }
+.notFixedContent{
+    display: block;
+}
   @media only screen and (max-width: 877px) {
    
     .MobileView{
@@ -177,7 +180,7 @@ display: flex;
         border: none;
         margin: auto;
         padding: auto;
-        width: 29.5rem;
+        width: 40rem;
         /* margin-left: -19rem;
         margin-right: 3rem;  */
     }

@@ -81,7 +81,7 @@ function RightContainerHome(){
     const [data,setdata]=useState(RepoData)
     const [inpuText,setinputText]=useState('')
     const [isButtonClick,setisButtonClick]=useState('notClicked')
-    const [isFixed,setisFixed]=('notFixedContent')
+    const [isFixed,setisFixed]=useState('notFixedContent')
     function handleInput(e){
      setinputText(e.target.value)
     }
@@ -127,6 +127,7 @@ function RightContainerHome(){
     ]
     function checkButtonClickedFalse(){
         setisButtonClick('notClicked')
+        setisFixed('notFixedContent')
     }
     function checkButtonClickedTrue(){
         setisFixed('FixedContent')

@@ -10,7 +10,7 @@
     width: 20%;
 }
 .rightChild{
-    margin-left: 20rem;
+   margin-left: 20rem; 
     margin-top: 3rem;
     width: 70%;
     margin-bottom: 3rem;
@@ -23,6 +23,7 @@
     .rightChild{
         margin-top: 3rem;
         margin-bottom: 3rem;
+        margin-left: -10rem;
     }
     
 }
