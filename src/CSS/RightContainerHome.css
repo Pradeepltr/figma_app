@@ -241,6 +241,8 @@ display: flex;
     }
     .CrossButton{
         margin-left: 16rem;
+        font-size: 3rem;
+        font-weight: bold;
     }
     .items{
     margin-top: 5rem;

@@ -21,9 +21,12 @@
         display: none;
     }
     .rightChild{
+        width: fit-content;
+        border: 2px solid gray;
+        border-radius: 0.5rem;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        margin-left: -10rem;
+        border-top: none;
     }
     
 }

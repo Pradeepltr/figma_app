@@ -12,7 +12,12 @@ import logOut from '../../Image/logOutIcon.jpg'
 import PhoneIcon from '../../Image/phoneIcon.jpg'
 import SettingIcon from '../../Image/SettingIcon.png'
 import CloudIcon from '../../Image/CloudIcon.png'
+import { useNavigate } from 'react-router-dom'
 function RightContainerHome(){
+    const navigate=useNavigate()
+function setRouter(){
+    navigate("/")
+}
     const RepoData=[
         {
             'repoName':'design-system',
@@ -145,7 +150,7 @@ function RightContainerHome(){
                 </div>
                 <div className='bName'>CodeAnt AI</div>
             </div>
-            <div className='CrossButton' onClick={checkButtonClickedFalse}><h2>X</h2></div>
+            <div className='CrossButton' onClick={checkButtonClickedFalse}>X</div>
         </div>
         <div className='userNameBox'>
         <select name='Pradeep Kumar' id='pk1'>
@@ -173,7 +178,7 @@ function RightContainerHome(){
                      <span className='buttonIcon'>
                         <img src={logOut}  id='btnIcons'/>
                      </span>
-                     <span className='Title'>Logout</span>
+                     <span className='Title' onClick={ setRouter}>Logout</span>
                     </button>
             </div>
         </div>
