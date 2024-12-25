@@ -43,13 +43,16 @@ function RightContainer(){
         }
     ]
     const [buttonData,setButtonData]=useState(SAAS_Data)
-    const [activeButtom,setActiveButton]=useState('SAAS')
+    const [activeButtom,setActiveButton]=useState('')
+    const [buttonClassName,setbuttonClassName]=useState('optionButtons1')
     function setDataSAAS(){
+        setbuttonClassName('optionButtons')
         setButtonData(SAAS_Data)
         setActiveButton('SAAS')
         console.log(buttonData)
     }
     function setDataSELF(){
+        setbuttonClassName('optionButtons')
         setButtonData(Self_Hosted_Data)
         setActiveButton('Self_Hosted')
         console.log(buttonData)
@@ -66,7 +69,7 @@ function RightContainer(){
         </div>
         <h1 className='message'>Welcome to CodeAnt AI</h1>
         <div className='buttons'>
-            <div className='btn1'> <button type='submit' onClick={setDataSAAS} className='optionButtons' id={activeButtom}>SAAS</button></div>
+            <div className='btn1'> <button type='submit'  onClick={setDataSAAS} className={buttonClassName} id={activeButtom}>SAAS</button></div>
             <div className='btn2'> <button type='submit' onClick={setDataSELF} className='optionButtons' id={activeButtom}>Self Hosted</button></div>
         </div>
         <div className='logiWithData'>
