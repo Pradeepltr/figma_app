@@ -10,6 +10,7 @@ or dirctly redirect to hosted link to see the project overview
 3. Search functionality of repo is also work
 4. By default in login page SAAS button is active
 5. If you click three line button new item that is present in left side of home dashboard page open over exisiting home dashboard page in mobile screen resolution.
+6. Refresh All button work - If you search any repo then displayed only match repo and after Refresh All button click, displayed all repositiories and also search input field will b empty.
 
 
 
